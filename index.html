@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Solar System</title>
+<link rel=stylesheet href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="sun">
+      <img src="./images/sun.png" alt="sun">
+    </div>
+    <div class="mercury"></div>
+    <div class="venus"></div>
+    <div class="earth">
+      <div class="moon"></div>
+    </div>
+    <div class="mars"></div>
+    <div class="jupiter"></div>
+    <div class="saturn"></div>
+    <div class="uranus"></div>
+    <div class="neptune"></div>
+    <div class="pluto">
+    </div>
+  </div>
+
+  <button onclick="window.location.href='kuchen.html'" class="redirect-button">Hier gehts weiter!</button>
+
+  <div class="text-display">
+    <p>Glückwunsch zu deiner anuellen Umrundung der Sonne!</p>
+  </div>
+
+  <button onclick="playBackgroundMusic()" class="play-button">Akustische Begleitung</button>
+
+  <audio id="backgroundMusic" loop>
+    <source src="happy-birthday-to-you-piano-version-13976.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script>
+    function playBackgroundMusic() {
+      var audio = document.getElementById('backgroundMusic');
+      audio.play();
+    }
+  </script>
+
+</body>
+
+</html>
